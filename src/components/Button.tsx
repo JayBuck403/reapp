@@ -1,8 +1,9 @@
 import "../styles/button.css";
 
 interface Props {
-	children: string;
+	children: string
 }
+
 
 const Button = ({ children }: Props) => {
 	return (

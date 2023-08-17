@@ -1,0 +1,6 @@
+.side-container {
+  height: 83.5vh;
+  width: 20%;
+  background: red;
+  z-index: 100;
+}
