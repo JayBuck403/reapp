@@ -1,5 +1,4 @@
 import { BsHousesFill } from "react-icons/bs";
-import "./logo.css";
 
 const Logo = () => {
 	return (

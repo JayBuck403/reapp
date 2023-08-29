@@ -1,16 +1,22 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "./components/login/Login";
-import Navbar from "./components/navbar/Navbar";
-import SecNavbar from "./components/navbar/SecNavbar";
-import MainPanel from "./components/main/MainPanel";
+import Login from "./components/Login";
+import Register from "./pages/Register";
+import Homepage from "./components/Homepage";
+import PropertiesPage from "./pages/PropertiesPage";
+import PropertyDetails from "./pages/PropertyDetails";
+
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <SecNavbar />
-      <MainPanel />
-    </div>
+	<div className="App">
+	<Routes>
+		<Route path="/" element={<Homepage />} />
+     	<Route path="/properties" element={<PropertiesPage />} />
+		<Route path="/login" element={<Login />} />
+		<Route path="/register" element={<Register />} />
+		<Route path="/properties/:_id" element={<PropertyDetails />} />
+	</Routes>
+	</div>
   );
 }
 
